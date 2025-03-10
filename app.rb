@@ -25,7 +25,7 @@ get("/wizard_subtract") do
   @first_num = params.fetch("first_num").to_f
   @second_num = params.fetch("second_num").to_f
 
-  @result = @first_num - @second_num
+  @result = @second_num - @first_num
 
   erb(:sub_result)
 end
